@@ -44,15 +44,21 @@
     },
     {
       "avatar_url": "Http",
-      "avatar": "AndrÃ©",
+      "avatar": "AndrÃÂ©",
       "message": "Ola grupo",
       "date": "12/12/2025, 09:56:28"
     },
     {
       "avatar_url": "Http",
-      "avatar": "André",
+      "avatar": "AndrÃ©",
       "message": "Agora escreve como um chat",
       "date": "12/12/2025, 09:59:43"
+    },
+    {
+      "avatar_url": "Http",
+      "avatar": "André",
+      "message": "Mesmo sem o.git aberto",
+      "date": "12/12/2025, 10:00:43"
     }
   ]
 }
