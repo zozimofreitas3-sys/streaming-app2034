@@ -1,88 +1,103 @@
 {
-  "messages": [
+  "monitor": {
+    "nome": "QuantumInvest",
+    "gerente_admin": "admin",
+    "email_alerta": "zozimofreitas3@gmail.com",
+    "status": "ativo",
+    "ativo": true
+  },
+  "data": {
+    "criado_em": "2025-12-13",
+    "ultima_verificacao": "2025-12-13T05:28:14.954Z"
+  },
+  "arquivos": [
     {
-      "avatar_url": "",
-      "avatar": "",
-      "message": "",
-      "date": ""
+      "nome": "api/",
+      "status": "faltando"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alexandre",
-      "message": "Oi grupo.",
-      "date": "12/12/2025, 08:14:02"
+      "nome": "acoes.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alexandre",
-      "message": "E ai ",
-      "date": "12/12/2025, 08:23:42"
+      "nome": "cadastro.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http ",
-      "avatar": "Andre",
-      "message": "Lkhgffnk",
-      "date": "12/12/2025, 08:36:29"
+      "nome": "cartao.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alexandre",
-      "message": "Nao era para gravar era para escrever encima ",
-      "date": "12/12/2025, 08:48:29"
+      "nome": "cdb.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Andre",
-      "message": "Eu acho o git tem que ta aberto",
-      "date": "12/12/2025, 08:54:02"
+      "nome": "conta.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Andre",
-      "message": "Eu acho o git tem que ta aberto",
-      "date": "12/12/2025, 08:54:04"
+      "nome": "contabackup/",
+      "status": "faltando"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "AndrÃÂÃÂ©",
-      "message": "Ola grupo",
-      "date": "12/12/2025, 09:56:28"
+      "nome": "depositar.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "AndrÃÂ©",
-      "message": "Agora escreve como um chat",
-      "date": "12/12/2025, 09:59:43"
+      "nome": "extrato.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "AndrÃ©",
-      "message": "Mesmo sem o.git aberto",
-      "date": "12/12/2025, 10:00:43"
+      "nome": "extratoacoes.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "André",
-      "message": "Agora o botão está no lugar certo",
-      "date": "12/12/2025, 10:04:23"
+      "nome": "extratocdb.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alexandre ",
-      "message": "Eu tenho que fazer o login generico",
-      "date": "12/12/2025, 17:28:25"
+      "nome": "extratoconta.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alex",
-      "message": "O.qur",
-      "date": "12/12/2025, 17:46:21"
+      "nome": "historico-quantum.html",
+      "status": "ok"
     },
     {
-      "avatar_url": "Http",
-      "avatar": "Alex",
-      "message": "Esta sumindo ",
-      "date": "12/12/2025, 17:48:07"
+      "nome": "index.html",
+      "status": "ok"
+    },
+    {
+      "nome": "linkico.png",
+      "status": "ok"
+    },
+    {
+      "nome": "painel.html",
+      "status": "ok"
+    },
+    {
+      "nome": "robot.html",
+      "status": "ok"
+    },
+    {
+      "nome": "transferencia.html",
+      "status": "ok"
+    },
+    {
+      "nome": "transferencia.js",
+      "status": "ok"
+    }
+  ],
+  "historico": [
+    {
+      "arquivo": "api/",
+      "status": "faltando",
+      "data": "13/12/2025, 02:28:15"
+    },
+    {
+      "arquivo": "contabackup/",
+      "status": "faltando",
+      "data": "13/12/2025, 02:28:17"
     }
   ]
 }
