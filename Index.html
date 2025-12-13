@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+ 
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>projetosORGs Painel  retratil</title>
+  
+<style>
+  body {
+            background: #000;
+            color: gold;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+      margin: 0;
+        }
+
+   
+      
+       
+  
+
+  /* Botão flutuante para abrir o menu */
+  .menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background: #222;
+    color: #ffd54a;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    transition: background 0.2s;
+  }
+  .menu-btn:hover {
+    background: #333;
+  }
+
+  /* Menu lateral */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    overflow-y: auto;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    box-shadow: 3px 0 15px rgba(0,0,0,0.6);
+  }
+  .side-menu.open {
+    transform: translateX(0);
+  }
+
+  /* Links do menu */
+  .side-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background 0.2s;
+  }
+  .side-menu a:hover {
+    background: rgba(255,255,255,0.1);
+  }
+
+  .side-menu img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  main {
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  #zap-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: 0.2s ease;
+}
+
+#zap-box img {
+    width: 30px;
+}
+
+#zap-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+}
+  
+   .chart-bar {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  color: white;
+ }   .chart-bar:before { content: "\f080"; }
+
+</style>
+</head>
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+<nav class="side-menu" id="menu">
+
+  <a href="https://github.com/zozimofreitas3-sys/streaming-app2034" target="_blank">
+    <img src="linkico.png" alt=""> streaming-app2034
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/QuantumInvest" target="_blank">
+    <img src="linkico.png" alt=""> QuantumInvest
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/appviral" target="_blank">
+    <img src="linkico.png" alt=""> appviral
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/ciclone" target="_blank">
+    <img src="linkico.png" alt=""> ciclone
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/fakebook" target="_blank">
+    <img src="linkico.png" alt=""> fakebook
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/ciclonevercel" target="_blank">
+    <img src="linkico.png" alt=""> ciclonevercel
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/moveme" target="_blank">
+    <img src="linkico.png" alt=""> moveme
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/Quantum-" target="_blank">
+    <img src="linkico.png" alt=""> Quantum-
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/ordo-messages" target="_blank">
+    <img src="linkico.png" alt=""> ordo-messages
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/messages-group" target="_blank">
+    <img src="linkico.png" alt=""> messages-group
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/loja-messages" target="_blank">
+    <img src="linkico.png" alt=""> loja-messages
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/ordo-calculadora" target="_blank">
+    <img src="linkico.png" alt=""> ordo-calculadora
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/relogio-analogico" target="_blank">
+    <img src="linkico.png" alt=""> relogio-analogico
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/aeon-primitivo" target="_blank">
+    <img src="linkico.png" alt=""> aeon-primitivo
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/pix-do-milhao-mod" target="_blank">
+    <img src="linkico.png" alt=""> pix-do-milhao-mod
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/repo-dowload-chatpwd" target="_blank">
+    <img src="linkico.png" alt=""> repo-dowload-chatpwd
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/railwaysupabaserendervercelgithubpythonflask" target="_blank">
+    <img src="linkico.png" alt=""> railway-supabase-render
+  </a>
+
+  <a href="https://github.com/zozimofreitas3-sys/eike-bat" target="_blank">
+    <img src="linkico.png" alt=""> eike-bat
+  </a>
+
+</nav>
+
+
+<main>
+    <i class="chart-bar"></i>
+        
+   <a href="projetos.html" target=_top  > Proj Estilizado</a><br>
+      <a href="https://bonotto300.blogspot.com/?m=1" target=_top  > bonotto300 BlogSpot.com</a><br>
+      <a href="https://www.tumblr.com/ohawhewh" target=_top  > Tumbrl  ohawhewh </a><br>
+     <a href="https://www.tumblr.com/thetrueworldbeyondicewall" target=_top  > Tumbrl theWorldBeyondIceWall</a><br>
+      <a href="https://m.youtube.com/@alexandreribeiro7271" target=_top  > YouTube myCanal</a><br>
+     <a href="base.html" target=_top  > Radio FM</a><br>
+     <a href="projeto FakeBook/player_user.html" target=_top  > Stream Json</a><br>
+    <a href="htdocs/" target=_top  > Pasta Htdocs</a><br>
+    
+  <h1>
+   ORGs dos projetos  
+     </h1><br>
+   
+    <div>
+          <br> <hr> <br>
+        <p> Div do email alexandreribeiro0026385333@gmail.com<br>
+        neste email tem :<br>
+        Moveme git repo<br>
+        Quantum git repo<br>
+        ciclone c menuV2 git repo<br>
+    </p>
+    <div>
+        <a href="alexandreribeiro0026385333@gmail.com" >
+         email do Git repo    alexandreribeiro0026385333@gmail.com
+        </a>
+    </div><div></div>
+      
+        <br>
+     <div>
+        <a href="#movemelink" name="movemerepo" >#movemelink</a><br> 
+         <span> projeto Moveme ta no (render com neon) em outro email</span><br>
+    <a href="https://github.com/alexandreribeiro0026385333-source/moveme.git  " >
+        Moveme Git repo 0026385333
+    </a><br>
+         <a href="https://moveme-backend-v80p.onrender.com" >
+             Deploy do render Moveme (neon ta 0) db 0026385333
+         </a>      <br>
+         <a href="https://console.neon.tech/app/org-dawn-bread-74585184/projects" >
+             o email 0026385333 Neon ta 0 
+         </a>
+        </div><div></div>
+    
+    
+    <br>
+    <div><span> projeto Quantum (vercel + supabase)</span><br>
+        <a href="#cadempresa" name="quantum" >#cadempresa</a><br>
+    <a href="https://quantum-invest.vercel.app/" >
+        Quantum url 0026385333
+    </a><br>
+         <a href="https://github.com/alexandreribeiro0026385333-source/QuantumInvest.git" >
+        Quantum Git repo 0026385333
+    </a><br>
+        <a href="https://vercel.com/alexandre-ribeiro-s-projects-41a465f6/quantum-invest/PBoywoazkbof1woBMgmqkZPvCFoU" >
+            Deploy vercel do Quantum 0026385333
+        </a><br>
+        <a href="https://quantumorbisverum.onrender.com/" >
+            Deploy render (quantum-Orbis disponivel pra bakups) 0026385333
+        </a><br>
+        <a href="projeto Quantum/qrepo-monitor.html" target="_top" >( arquivos do repo )</a>
+        <br>
+        </div><div></div>
+    
+    <br>
+  <div> <a href="#ciclonev1" name="ciclonev2" >#ciclonev1</a>
+      <span>CicloneV2 com menu ta no (vercel + supabase )</span> <br>
+  <a href="https://supabase.com/dashboard/organizations"  >
+    Supabase Ciclone com menu 0026385333
+  </a>  <br>
+  <a href="https://vercel.com/alexandre-ribeiro-s-projects-41a465f6"  >
+    Vercel do Ciclone com menu 0026385333
+  </a>  <br>
+  <a href="https://appviral.vercel.app/" >
+    Ciclone com menu Vercel 
+  </a>  <br>
+  <a href="https://github.com/alexandreribeiro0026385333-source/appviral.git " >
+    GitHub do Ciclone com menu 0026385333
+  </a>     <br>
+      <a href="https://eike-batista6.imgbb.com/"   >
+          imgbb do Ciclone com menu
+      </a><br>
+      <a href="https://vercel.com/alexandre-ribeiro-s-projects-41a465f6/appviral/EDTFf5Bi2JvcrhgCVC7oFzvCij1r" >
+          Deploy do vercel 0026385333
+      </a><div></div>
+      
+  </div>
+          <br> <hr> <br>
+    </div>
+  
+     
+      <div> <p>
+          Div do email  <a href="fakesmilemail@gmail.com" >
+              webkilohertz<br>
+              fakesmilemail@gmail.com<br>
+          </a><br>
+          
+      </p> <div> </div>
+          
+
+      <div>projeto Fakebook <br>
+           
+          <a href="https://github.com/webkilohertz/fakebook.git" >
+              Fakebook repo Git  fakesmilemail
+          </a> <br>
+          <a href="https://fakebook-orpin.vercel.app/" >
+              url do Vercel + supabase Fakebook
+          </a> <br>
+<a href=https://vercel.com/andre-smile-s-projects/fakebook/Emrr78Nk3AqmTSkjjcoNWBXXd1w6  >
+          vercel deploy </a><br>
+<a href=https://fakebook-orpin.vercel.app/ >
+          vercel url</a><br>
+      </div>
+          <br>
+          
+          
+            <div>    <a href="#quantum" name="cadempresa" >#quantum</a>
+                projeto cadastro Empresas no PTC   <br>
+                <a href="https://website-gamma-sepia-65.vercel.app/" >
+                    url vercel + supabase cad Empresas ptc
+                </a>    <br>
+                
+            </div>  <br>
+          
+          
+          
+          
+              <div>projeto Pix do milhao-mod
+                  
+                <br>
+<a href=https://github.com/webkilohertz/pix-do-milhao-mod.git  >
+          repo Git pixdomilhao </a> <br>
+<a href=https://pix-do-milhao-mod.vercel.app/  >
+          url sorteio no (vercel + supabase ) </a><br>
+<a href=https://vercel.com/andre-smile-s-projects/pix-do-milhao-mod/5tyogQZEh1BbLxYHK5A3Xn3jRXHv  >
+    vercel deploy </a><br>
+              </div> <br>
+
+
+              <div>projeto pix do milhao
+              </a   href=https://github.com/webkilohertz/pix-do-milhao.git >
+            repo do Git</a><br>
+ <a  href=https://pix-do-milhao-one.vercel.app/  >
+Url sorteio (supa + vercel )      </a> <br>           
+              </div><br>
+      </div>
+    
+     <br> <hr> <br>
+
+
+<div>
+    <p>  projetos no    email alexandreribeiro04022035@gmail.com  <br>
+    tem 2 dbs : <br>
+    1 cicloneV1  <br>
+    2 dbrun moveme <br>
+    </p>
+    
+    <div>
+     <a href="#movemerepo" name="movemelink" >#movemerepo</a><br>
+    as tabelas do Moveme estao em ( dbrun )no neon <br>
+    <a href="https://moveme-backend-v80p.onrender.com/cadmotora.html   " > cad motora  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/cadboneco.html  " > cad boneco  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/motora.html  " > motora  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/boneco.html   " >  boneco </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/mapadomotora.html  " >  mapa motora  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/mapadoboneco.html " >  mapa boneco  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/veiculocad.html " > veiculos  </a><br>
+     <a href="https://moveme-backend-v80p.onrender.com/mapa.html " >  mapa </a><br>
+    <a   href=https://console.neon.tech/app/projects/fragrant-cell-57660200 >
+    dbrun tabelas do Moveme </a><br></div> <br>
+    
+<div>
+    
+ <a href="#ciclonev2" name="ciclonev1" >#ciclonev2</a> <br>
+<a href="https://ciclone-62mq.onrender.com/"> CicloneV1 (render + neon )  </a>  <br>
+<a href=https://github.com/alexandreribeiro04022035-arch/ciclone.git >
+    repo do Git CicloneV1</a>  <br>
+    
+    <a href=https://console.neon.tech/app/org-silent-haze-12355916/projects >
+  Neon repo </a><br>
+    
+<a href=https://ciclone-62mq.onrender.com/ >
+      url (render + neon ) </a><br>
+    <a href="https://ciclone-62mq.onrender.com/  " > CicloneV1 URL   </a> <br> 
+    
+    
+    
+    <br>
+    <a href="">Ciclonevercel </a><br>
+<a href=https://github.com/alexandreribeiro04022035-arch/ciclonevercel.git > 
+    repo Git </a><br>
+    
+    <br>
+    <a href=""> Quantum</a><br>
+<a href=https://github.com/alexandreribeiro04022035-arch/Quantum-.git >
+    repo Git
+</a><br>
+    
+</div>
+   </div>
+  <br> <hr> <br>
+
+
+
+<div><span> email alexandreribeiro11967885939@gmail.com</span>
+   
+<div>  <a href="https://github.com/alexandreribeiro11967885939-svg?tab=repositories " > Repo do Git </a><br>  </div> 
+    <a href="https://alexandreribeiro11967885939-svg-ord-tau.vercel.app/ " > Ordo messages  </a><br>
+       <a href=" # " > Messages group  </a><br>
+    <a href=" # " > Loja messages  </a><br>
+       <a href="https://ordo-calculadora.vercel.app/ " > ordo calculadora  </a><br>
+   <a href="https://relogio-analogico-puce.vercel.app/  " > relogio analogico </a><br>
+       <a href="https://aeon-primitivo.vercel.app/ " > IA Bonoto aeon-primitivo  </a><br>
+    
+</div>
+  <br> <hr> <br>
+
+
+
+
+
+<div><span> email eike eikebatistabrasil@gmail.com</span>
+   
+<div>  <a href="https://github.com/eikebatistabrasil-lgtm?tab=repositories " > Repo do Git 
+    eikebatistabrasil@gmail.com <br>
+</a>
+  <a href=https://vercel.com/eike-s-projects/railwaysupabaserendervercelgithubpythonflask/FLKuHNmaC9f544zn3FL7uHwvAQV3 >
+    Deploy no vercel
+</a><br>  </div> 
+    <a href="https://messages-group.vercel.app/ " > Messages group ApkEikeVercel </a><br>
+       <a href="https://repo-dowload-chatpwd.vercel.app/ " >Repo download chatpwd  Raillway</a><br>
+    <a href="https://railwaysupabaserendervercelgithubpy.vercel.app/" > RaillwayVercel  controla  chat pixdomilhao </a><br>
+       <a href="https://eike-bat.vercel.app/" > Eikebat chatlocal</a><br>
+   
+    
+</div>
+  <br> <hr> <br>
+
+<div><span> repoGit do zozimofreitas3</span><br>
+<a href=https://github.com/zozimofreitas3-sys/streaming-app2034.git  >
+    repo Git zozimofreitas@gmail.com
+</a>
+    <p> token =  (  const TOKEN = "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";   )   </p>
+    <br>
+
+</div>repo  tokenizado 
+ <br> <hr> <br>
+
+<br><a href="awesome.html" target="_top"  >  awesome I </a><br>
+<a href="awesomebakup.html" target="_top"  >  awesome II </a><br>
+<a href="awesomecorreto.html" target="_top"  >  awesome III </a><br>
+ <a href="clicks/">Sons para Apks </a> <br>
+
+ <br> <hr> <br>
+
+
+    
+  
+  
+</main>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('menu').classList.toggle('open');
+  }
+
+                
+        
+    </script>
+  
+  
+  <a id="zap-box" href="https://wa.me/5521970227546" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    Atendimento
+</a>
+</body>
+</html>
