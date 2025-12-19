@@ -11,6 +11,15 @@ def drive_links():
     return render_template('drive-links.html')
 
 
+@app.route('/ia-orquestrador')
+def  ia-orquestrador():
+    return  send_from_directory('static','ia-orquestrador.html')
+
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
