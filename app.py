@@ -8,7 +8,7 @@ def index():
 
 @app.route('/drive-links')
 def drive_links():
-    return render_template('drive-links.html')
+    return   send_from_directory('static','drive-links.html')
 
 
 @app.route('/ia-orquestrador')
