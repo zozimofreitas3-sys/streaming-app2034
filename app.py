@@ -16,6 +16,10 @@ def  ia-orquestrador():
     return  send_from_directory('static','ia-orquestrador.html')
 
 
+@app.route('/miniwriter')
+def  miniwriter():
+    return  send_from_directory('static','miniwriter.html')
+
 
 
 
